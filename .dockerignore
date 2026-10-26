@@ -1,0 +1,10 @@
+target
+.git
+.idea
+.opencode
+*.iml
+README.md
+HELP.md
+AGENTS.md
+opencode.json
+SpeakUp-documentation.html

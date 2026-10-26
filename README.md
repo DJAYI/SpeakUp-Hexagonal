@@ -7,3 +7,10 @@ El proyecto permite crear categorías, agregar preguntas con sus opciones, respo
 La aplicación sigue una arquitectura hexagonal: el dominio contiene las reglas de negocio, la capa de aplicación define los casos de uso y puertos, y la infraestructura implementa los adaptadores HTTP y la persistencia en memoria. Las reglas de dependencia se verifican automáticamente con ArchUnit durante las pruebas.
 
 Para ejecutar el proyecto se utiliza el wrapper de Maven incluido: `.\mvnw.cmd spring-boot:run`. Las pruebas se ejecutan con `.\mvnw.cmd test`, que valida tanto la lógica como las reglas de arquitectura.
+
+Para construir y ejecutar la imagen Docker:
+
+```powershell
+docker build -f docker/Dockerfile -t speakup .
+docker run --rm -p 8080:8080 speakup
+```
