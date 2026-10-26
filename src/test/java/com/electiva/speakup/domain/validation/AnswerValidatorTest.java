@@ -1,9 +1,13 @@
-package com.electiva.speakup.domain.model.answer;
+package com.electiva.speakup.domain.validation;
 
 import com.electiva.speakup.domain.exception.InvalidAnswerTypeException;
 import com.electiva.speakup.domain.exception.QuestionAlreadyAnsweredException;
 import com.electiva.speakup.domain.model.Question;
 import com.electiva.speakup.domain.model.QuestionType;
+import com.electiva.speakup.domain.model.answer.Answer;
+import com.electiva.speakup.domain.model.answer.FreeTextAnswer;
+import com.electiva.speakup.domain.model.answer.MultpleOptionAnswer;
+import com.electiva.speakup.domain.model.answer.SingleOptionAnswer;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

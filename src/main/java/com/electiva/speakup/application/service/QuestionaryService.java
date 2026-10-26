@@ -10,7 +10,7 @@ import com.electiva.speakup.domain.model.Option;
 import com.electiva.speakup.domain.model.Question;
 import com.electiva.speakup.domain.model.QuestionType;
 import com.electiva.speakup.domain.model.answer.Answer;
-import com.electiva.speakup.domain.model.answer.AnswerValidator;
+import com.electiva.speakup.domain.validation.AnswerValidator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
